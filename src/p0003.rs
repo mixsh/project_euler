@@ -19,18 +19,24 @@ fn is_prime(n: u64) -> bool {
 pub fn go() {
     // let n: u64 = 13195;
     let n: u64 = 600851475143;
-    let n_sqrt = (n as f64).sqrt() as u64;
 
-    let mut largest_prime_factor = 2;
+    let mut largest_prime_factor;
+    let mut multiplied_prime_factors = 1;
     let mut i = 1;
 
     loop {
         if n % i == 0 && is_prime(i) {
             largest_prime_factor = i;
+            multiplied_prime_factors *= i;
+
+            // All prime factors multiplied must 
+            // have the same value as N
+            if n == multiplied_prime_factors {
+                break
+            };
         }
 
         i += 2;
-        if i > n_sqrt { break };
     }
 
     println!("P0003 result: {}", largest_prime_factor);
