@@ -11,7 +11,7 @@
 //! whose values do not exceed four million,
 //! find the sum of the even-valued terms.
 
-fn main() {
+pub fn go() {
     let mut prev  = 1;
     let mut fib   = 2;
     let mut total = 0;
@@ -28,5 +28,5 @@ fn main() {
         }
     }
 
-    println!("Result: {}", total);
+    println!("P0002 result: {}", total);
 }

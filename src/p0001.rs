@@ -13,7 +13,7 @@
 //! of all the multiples of 3 or 5
 //! below 1000.
 
-fn main() {
+pub fn go() {
     let mut n = 3;
     let mut total = 0;
 
@@ -29,5 +29,5 @@ fn main() {
         }
     }
     
-    println!("Result: {}", total);
+    println!("P0001 result: {}", total);
 }

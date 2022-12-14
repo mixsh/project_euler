@@ -4,15 +4,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'p0001'",
+            "name": "Debug executable 'project_euler'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=p0001",
-                    "--package=p0001"
+                    "--bin=project_euler",
+                    "--package=project_euler"
                 ],
                 "filter": {
-                    "name": "p0001",
+                    "name": "project_euler",
                     "kind": "bin"
                 }
             },
